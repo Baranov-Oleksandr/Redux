@@ -1,11 +1,13 @@
-export createCounterIncrementAction() {
+import { DECREMENT, INCREMENT } from './constants';
+
+export function createCounterIncrementAction() {
   return {
-    type: 'INCREMENT',
+    type: INCREMENT,
   };
 }
 
-export createCounterDecrementAction() {
+export function createCounterDecrementAction() {
   return {
-    type: 'DECREMENT',
+    type: DECREMENT,
   };
 }
