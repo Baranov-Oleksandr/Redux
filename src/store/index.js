@@ -1,5 +1,9 @@
-import {counterReducer} from "../modules/counter/reducer";
+import { counterReducer } from '../modules/counter/reducer';
+import { todoReducer } from '../modules/todo/reducer';
 
-export const store = window.Redux.createStore(counterReducer);
+const combinedReducers = window.Redux.combineReducers({
+  counterReducer,
+  todoReducer,
+});
 
-window.store = store;
+export const store = window.Redux.createStore(combinedReducers);
