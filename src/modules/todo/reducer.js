@@ -1,4 +1,5 @@
 import { TODO_ADD } from './constants';
+import {store} from "../../store";
 
 const initialState = {
   items: [
@@ -23,3 +24,10 @@ export function todoReducer(state = initialState, action) {
       return state;
   }
 }
+
+// store.dispatch({
+//   type: 'TODO_ADD',
+//   payload: {
+//     title: 'Уйти домой',
+//   },
+// })
