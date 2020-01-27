@@ -6,18 +6,19 @@ function renderTodoList() {
   const { todoReducer } = store.getState();
   const { items } = todoReducer;
 
-  console.log(todoRootNode);
-  console.log(items);
-
   const listNode = document.createElement('ul');
+
+  todoRootNode.innerHTML = '';
 
   items.forEach(item => {
     const itemNode = document.createElement('li');
 
-  itemNode.innerText = item;
+    itemNode.innerText = item;
+    listNode.appendChild(itemNode);
+  });
 
-  listNode.appendChild(itemNode);
-  }
+  todoRootNode.append(listNode);
+}
 
 store.subscribe(renderTodoList);
 

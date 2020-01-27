@@ -1,4 +1,4 @@
-import { TODO_ADD } from "./constants";
+import { TODO_ADD } from './constants';
 
 const initialState = {
   items: [
@@ -11,7 +11,13 @@ const initialState = {
 export function todoReducer(state = initialState, action) {
   switch (action.type) {
     case TODO_ADD:
-      return state;
+      return {
+        ...state,
+        items: [
+          ...state.items,
+          action.payload.title,
+        ],
+      };
 
     default:
       return state;
