@@ -7,7 +7,6 @@ const counterIncrementButtonNode = document.getElementById('counter-increment-bu
 
 store.subscribe(() => {
   const { counterReducer } = store.getState();
-
   counterValueNode.innerText = counterReducer;
   // console.log(store.getState())
 
