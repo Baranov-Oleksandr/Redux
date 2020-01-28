@@ -1,12 +1,8 @@
 import { store } from '../../store';
 
-const todoRootNode = document.getElementById('todo-root');
+const todoRootNode = document.getElementById('todo-list-root');
 const todoInputNode = document.getElementById('todo-input');
 const todoBtnAddNode = document.getElementById('todo-btn-add');
-
-console.log(todoRootNode);
-console.log(todoInputNode);
-console.log(todoBtnAddNode);
 
 function renderTodoList() {
   const { todoReducer } = store.getState();

@@ -222,17 +222,25 @@
 <button id="counter-decrement-button" class="counter-decrement-button">
   Decrement
 </button>
+
 <div id="counter-value" class="counter__value">
   -
 </div>
+
 <button id="counter-increment-button" class="counter-increment-button">
   Increment
 </button>
 
-<input id="todo-input" type="text" />
-<button id="todo-button-add">Add</button>
 
-<div id="todo-root">
+<div id="todo-root"></div>
+
+<div class="todo">
+  <div class="todo__controls">
+    <input id="todo-input" type="text" class="todo-input-text" />
+    <input id="todo-filter-input" type="text" class="todo-input-text" placeholder="Please type in task" />
+    <button id="todo-button-add" class="todo__controls-btn">Add</button>
+  </div>
+  <div id="todo-list-root"></div>
 </div>
 
 <noscript>You need to enable JavaScript to run this app.</noscript>

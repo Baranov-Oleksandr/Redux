@@ -5,6 +5,7 @@
 
 body {
   padding: 30px;
+  background-color: #aebdb0;
 }
 
 .counter__value {
@@ -24,4 +25,24 @@ body {
   padding: 10px;
   border: 3px solid #f2f2f2;
   color: #ffa700;
+}
+
+.todo {
+  display: inline-block;
+  padding: 30px;
+  border: 1px solid #f2f2f2;
+  margin-top: 30px;
+}
+
+.todo__controls {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.todo__controls-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background: cyan;
+  //padding: 20px;
+  //font-size: 20px;
 }
