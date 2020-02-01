@@ -1,6 +1,5 @@
-import './styles/app.scss';
 import './modules/counter';
+import { store } from "./store";
 import './modules/todo';
-import { store } from './store';
 
 window.store = store;
